@@ -1,0 +1,224 @@
+
+body { 
+  background-image: url("./images/yellow-food.jpg");
+  
+}
+img {
+  width: 300px;
+  height: auto;
+}
+
+* { 
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+
+h1 { /*//*/
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0;
+  color: #470de7: /*titulo*/
+  text-shadow: 2px 2px 1 px black; /*sombra*/
+  font-family: 'Barlow', cursive;
+}
+
+
+
+.parrafo {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 0;
+  color: #03080e: /*titulo*/
+  text-shadow: 2px 2px 1 px black; /*sombra*/
+  font-family: 'Barlow', cursive;
+}
+
+.hecho-por {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  color: #db5d09: /*titulo*/
+  text-shadow: 2px 2px 1 px black; /*sombra*/
+  font-family: 'Barlow', cursive;
+}
+
+.Desarrollado {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  color: #fa5620: /*titulo*/
+  text-shadow: 2px 2px 1 px black; /*sombra*/
+  font-family: 'Barlow', cursive;
+}
+h3 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  color: #c50b14: /*titulo*/
+  text-shadow: 2px 2px 1px ; /*sombra*/
+  font-family: 'Barlow', cursive;
+}
+
+
+.boton-validar { 
+  font-family: 'Barlow', cursive;
+  align-items: center;
+  text-align: center;
+  width:150px;
+  padding: 8px;
+  background: #f5dd0c;
+  /*box-shadow: -4px 4px 14px rgba(204, 45, 45, 0.6);*/
+  border-radius: 90px;
+  cursor: pointer;
+  border: 1px dashed rgb(224, 224, 235);
+  font-size: 18px;
+  
+}
+
+.boton-validar:hover{
+  background: #f8b863;
+  align-items: center;
+}
+.limpiar { 
+  font-family: 'Barlow', cursive;
+  align-items: center;
+  text-align: center;
+  width:150px;
+  padding: 8px;
+  background: #f5dd0c;
+  /*box-shadow: -4px 4px 14px rgba(204, 45, 45, 0.6);*/
+  border-radius: 90px;
+  cursor: pointer;
+  border: 1px dashed rgb(224, 224, 235);
+  font-size: 18px;
+  
+}
+.limpiar:hover{
+  background: #f8b863;
+  align-items: center;
+}
+
+.contenido1 { 
+  margin-top: 50px;
+}
+
+.ingresa { 
+  color: rgb(238, 12, 12);
+  text-align:center;
+  font-family:"Comic Sans MS";
+}
+
+
+.name-input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 223, 55);
+  color: rgb(126, 126, 126);
+  width: 100%;
+  outline: none;
+}
+.number-input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 223, 55);
+  color: rgb(126, 126, 126);
+  width: 100%;
+  outline: none;
+}
+
+.mes-input {
+  width:180px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 223, 55);
+  color: rgb(126, 126, 126);
+  width: 30%;
+  outline: none;
+}
+.year-input {
+  width:180px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 223, 55);
+  color: rgb(126, 126, 126);
+  width: 30%;
+  outline: none;
+}
+.cvv-input {
+  width:80px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 223, 55);
+  color: rgb(126, 126, 126);
+  width: 30%;
+  outline: none;
+}
+
+.contenido {
+  background-color: rgb(241, 234, 231);
+  border-radius: 100px;
+  max-width: 600px;
+  width: 900px;
+  margin: auto;
+  padding: 80px;
+  
+}
+
+
+.close { 
+  font-family: 'Barlow', cursive;
+  width:150px;
+  padding: 8px;
+  background: #f5dd0c;
+  box-shadow: -4px 4px 14px rgba(236, 228, 228, 0.6);
+  border-radius: 90px;
+  cursor: pointer;
+  border: 1px dashed #ccf;
+  font-size: 18px;
+}
+.close:hover {
+  background: #f8b863;
+}
+
+.container {
+  align-items : center;
+}
+ 
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.modal {
+  background-color: #fff;
+  
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  padding: 3em 2.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
